@@ -1,4 +1,4 @@
-# full-stack-notes-app
+# Notes.it - a full-stack-notes-app
 
 Full Stack Notes Taking App built on MERN stack
 
