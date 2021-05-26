@@ -1,0 +1,20 @@
+.note-item {
+    width: 85%;
+    color: white;
+    // background-color: grey;
+    border-bottom: 1px solid grey;
+    border-radius: 5px;
+    height: 65px;
+    text-align: left;
+
+    display: flex;
+    flex-direction: column;
+
+    &__title {
+        font-weight: bold;
+    }
+
+    &__content {
+        color: lightgray !important;
+    }
+}

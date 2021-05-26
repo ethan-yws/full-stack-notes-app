@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
+import NoteItem from "../noteItem/NoteItem";
+import "./NotesList.css";
 
-function NoteItems() {
+function NotesList() {
     const [notes, setNotes] = useState([]);
 
     useEffect(() => {
@@ -18,13 +20,14 @@ function NoteItems() {
     return (
         <div className="note-items">
             {notes.map((note) => (
-                <div key={note.id}>
-                    <span>{note.title}</span>
-                    <span>{note.content}</span>
-                </div>
+                <NoteItem
+                    key={note.id}
+                    title={note.title}
+                    content={note.content}
+                />
             ))}
         </div>
     );
 }
 
-export default NoteItems;
+export default NotesList;

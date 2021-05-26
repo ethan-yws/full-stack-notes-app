@@ -1,6 +1,6 @@
 import "./App.css";
 import LeftHeader from "./components/leftHeader/LeftHeader";
-import NoteItems from "./components/noteItems/NoteItems";
+import NotesList from "./components/notesList/NotesList";
 import RightHeader from "./components/rightHeader/RightHeader";
 import TextEditor from "./components/textEditor/TextEditor";
 
@@ -10,7 +10,7 @@ function App() {
             <div className="app__left-page">
                 <LeftHeader />
                 {/* <SearchBar /> */}
-                <NoteItems />
+                <NotesList />
             </div>
             <div className="app__right-page">
                 <RightHeader />

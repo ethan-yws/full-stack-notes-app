@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,UAAU,CAAC;EACP,KAAK,EAAE,GAAG;EACV,KAAK,EAAE,KAAK;EAEZ,aAAa,EAAE,cAAc;EAC7B,aAAa,EAAE,GAAG;EAClB,MAAM,EAAE,IAAI;EACZ,UAAU,EAAE,IAAI;EAEhB,OAAO,EAAE,IAAI;EACb,cAAc,EAAE,MAAM;CASzB;;AAPI,AAAD,iBAAQ,CAAC;EACL,WAAW,EAAE,IAAI;CACpB;;AAEA,AAAD,mBAAU,CAAC;EACP,KAAK,EAAE,oBAAoB;CAC9B",
+    "sources": [
+        "NoteItem.scss"
+    ],
+    "names": [],
+    "file": "NoteItem.css"
+}
