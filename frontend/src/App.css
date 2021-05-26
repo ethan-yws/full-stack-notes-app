@@ -1,0 +1,17 @@
+.App {
+    text-align: center;
+    display: flex;
+}
+
+.app__left-page {
+    flex: 0.25;
+    min-height: 100vh;
+    border-right: 1px solid lightgray;
+    background-color: rgb(48, 45, 51);
+}
+
+.app__right-page {
+    flex: 0.75;
+
+    background-color: whitesmoke;
+}

@@ -1,0 +1,28 @@
+POST http://localhost:5000/notes
+Content-Type: application/json
+
+{
+    "title": "Charlie's Recipe",
+    "content": "**Hi, I am Cpatain Charlie**" 
+}
+
+###
+DELETE http://localhost:5000/notes/60acdd17d3beb849529f02b9
+
+###
+POST http://localhost:5000/notes
+Content-Type: application/json
+
+{
+    "title": "Mood",
+    "content": "# Happy Day  - yoyo" 
+}
+
+
+###
+PATCH http://localhost:5000/notes/60acddb3d3beb849529f02bb
+Content-Type: application/json
+
+{
+    "title": "Testing Document"
+}

@@ -1,0 +1,21 @@
+/* icon font */
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+
+.left-header--container {
+    // border-bottom: 1px solid grey;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+
+    .left-header {
+        display: flex;
+        margin-left: 20px;
+
+        span {
+            font-family: "Pacifico", cursive;
+            font-size: 30px;
+            margin-top: 3px;
+            color: white;
+        }
+    }
+}

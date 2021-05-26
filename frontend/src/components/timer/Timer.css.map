@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AACK,AAAD,cAAS,CAAC;EACN,SAAS,EAAE,IAAI;CAClB",
+    "sources": [
+        "Timer.scss"
+    ],
+    "names": [],
+    "file": "Timer.css"
+}
