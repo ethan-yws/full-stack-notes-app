@@ -4,15 +4,22 @@ import Weather from "../weather/Weather";
 import "./RightHeader.css";
 import CreateIcon from "@material-ui/icons/Create";
 import DeleteForeverIcon from "@material-ui/icons/DeleteForever";
-import SaveIcon from "@material-ui/icons/Save";
+import SyncIcon from "@material-ui/icons/Sync";
+import IconButton from "@material-ui/core/IconButton";
 
 function RightHeader() {
     return (
         <div className="right-header-container">
             <div className="tools">
-                <CreateIcon />
-                <DeleteForeverIcon />
-                <SaveIcon />
+                <IconButton>
+                    <CreateIcon />
+                </IconButton>
+                <IconButton>
+                    <DeleteForeverIcon />
+                </IconButton>
+                <IconButton>
+                    <SyncIcon />
+                </IconButton>
             </div>
             <div className="widgets">
                 <div className="weather-widget">

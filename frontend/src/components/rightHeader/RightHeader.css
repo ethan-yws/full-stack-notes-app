@@ -16,8 +16,8 @@
   z-index: 100;
 }
 
-.right-header-container .tools * {
-  margin-left: 20px;
+.right-header-container .tools > * {
+  margin-left: 10px;
 }
 
 .right-header-container .widgets {
