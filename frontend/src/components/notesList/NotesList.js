@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-// import NoteItem from "../noteItem/NoteItem";
+import NoteItem from "../noteItem/NoteItem";
 import "./NotesList.css";
 import { Link } from "react-router-dom";
 
@@ -21,9 +21,12 @@ function NotesList() {
     return (
         <div className="note-items">
             {notes.map((note) => (
-                <Link to={`/note/${note._id}`} key={note._id}>
-                    {/* <NoteItem title={note.title} content={note.content} /> */}
-                    {note.title}
+                <Link
+                    key={note._id}
+                    to={`/note/${note._id}`}
+                    style={{ textDecoration: "none" }}
+                >
+                    <NoteItem title={note.title} content={note.content} />
                 </Link>
             ))}
         </div>

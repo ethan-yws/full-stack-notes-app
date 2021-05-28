@@ -19,11 +19,7 @@ function App() {
                     <RightHeader />
 
                     <Switch>
-                        <Route path="/" exact>
-                            Home
-                        </Route>
                         <Route path="/note/:id" component={TextEditor} />
-                        {/* <TextEditor /> */}
                     </Switch>
                 </div>
             </Router>

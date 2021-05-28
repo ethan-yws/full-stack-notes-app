@@ -6,7 +6,9 @@ function NoteItem(props) {
         <div className="note-item">
             <span className="note-item__title">{props.title}</span>
             <br />
-            <span className="note-item__content">{props.content}</span>
+            <span className="note-item__content">
+                {props.content.slice(0, 30)} ...
+            </span>
         </div>
     );
 }

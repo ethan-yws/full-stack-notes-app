@@ -3,23 +3,21 @@ import MDEditor from "@uiw/react-md-editor";
 
 function TextEditor({ match }) {
     console.log(match.params.id);
-    const [value, setValue] = useState("");
 
     // Fetch the notes by id
     useEffect(() => {
         fetchNote();
-    }, []); // <-- effects once since we need make changes on the content
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, [match]);
+
+    const [value, setValue] = useState("");
 
     const fetchNote = async () => {
-        try {
-            const data = await fetch(
-                `http://localhost:5000/notes/${match.params.id}`
-            );
-            const note = await data.json();
-            setValue(note.content);
-        } catch (err) {
-            console.log(err);
-        }
+        const data = await fetch(
+            `http://localhost:5000/notes/${match.params.id}`
+        );
+        const note = await data.json();
+        setValue(note.content);
     };
 
     return (

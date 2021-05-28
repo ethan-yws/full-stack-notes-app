@@ -14,8 +14,8 @@ POST http://localhost:5000/notes
 Content-Type: application/json
 
 {
-    "title": "Mood",
-    "content": "# Happy Day  - yoyo" 
+    "title": "Next Week have a meeting",
+    "content": "**Meeting on Thursday**" 
 }
 
 
