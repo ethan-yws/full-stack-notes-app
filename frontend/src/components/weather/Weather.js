@@ -1,14 +1,16 @@
 import React, { useEffect, useState } from "react";
 import "./Weather.css";
 
+const initialWeather = {
+    weather: [{ main: "" }],
+    name: "Loading...",
+    main: {
+        temp: "",
+    },
+};
+
 function Weather() {
-    const [weather, setWeather] = useState({
-        weather: [{ main: "" }],
-        name: "Loading...",
-        main: {
-            temp: "",
-        },
-    });
+    const [weather, setWeather] = useState(() => initialWeather);
 
     useEffect(() => {
         fetchWeather();
