@@ -10,7 +10,7 @@ const defaultTimeStr = `${weekdays[defaultTime.getDay()]} ${
 }:${defaultTime.getMinutes()} ${defaultTime.getHours() >= 12 ? "pm" : "am"}`;
 
 function Timer() {
-    const [clock, setClock] = useState(defaultTimeStr);
+    const [clock, setClock] = useState(() => defaultTimeStr);
 
     // Update the time per minute in 12 hours format
     useEffect(() => {
