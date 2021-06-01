@@ -6,12 +6,12 @@
 .app__left-page {
     flex: 0.25;
     min-height: 100vh;
-    border-right: 1px solid lightgray;
-    background-color: rgb(48, 45, 51);
+    border-right: 2px solid rgb(240, 239, 240);
+    background-color: rgb(247, 246, 243);
 }
 
 .app__right-page {
     flex: 0.75;
 
-    background-color: whitesmoke;
+    /* background-color: whitesmoke; */
 }

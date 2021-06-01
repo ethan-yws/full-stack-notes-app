@@ -6,16 +6,18 @@
     position: sticky;
     top: 0;
     z-index: 100;
+    background-color: rgb(247, 246, 243);
 
     .left-header {
         display: flex;
         margin-left: 20px;
+        margin-top: 20px;
 
         span {
             font-family: "Pacifico", cursive;
             font-size: 30px;
             margin-top: 3px;
-            color: white;
+            // color: white;
         }
     }
 }

@@ -1,8 +1,9 @@
 .note-item {
   width: 23vw;
-  color: white;
-  border-bottom: 1px solid grey;
-  height: 65px;
+  color: grey;
+  background-color: #eaeaea;
+  border-radius: 5px;
+  height: 100px;
   text-align: left;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -15,9 +16,13 @@
 
 .note-item__title {
   font-weight: bold;
+  margin-left: 10px;
+  margin-top: 5px;
 }
 
 .note-item__content {
-  color: lightgray !important;
+  color: grey;
+  font-weight: 500;
+  margin-left: 10px;
 }
 /*# sourceMappingURL=NoteItem.css.map */

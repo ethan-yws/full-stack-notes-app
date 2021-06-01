@@ -16,7 +16,7 @@ function App() {
                 </div>
 
                 <div className="app__right-page">
-                    <RightHeader />
+                    {/* <RightHeader /> */}
 
                     <Switch>
                         <Route path="/note/:id" component={TextEditor} />

@@ -22,7 +22,7 @@ function TextEditor({ match }) {
 
     return (
         <div className="text-editor">
-            <MDEditor value={value} onChange={setValue} height="91vh" />
+            <MDEditor value={value} onChange={setValue} />
         </div>
     );
 }
