@@ -3,6 +3,7 @@ require("dotenv").config();
 const express = require("express");
 const app = express();
 const mongoose = require("mongoose");
+const cors = require("cors");
 
 // Connect to MongoDB
 mongoose.connect(process.env.DB_URL, {
@@ -15,6 +16,13 @@ db.once("open", () => console.log("Connected to database"));
 
 // Setup server to accept JSON
 app.use(express.json());
+
+// Configuring CORS
+let corsOptions = {
+    origin: "*",
+    optionsSuccessStatus: 200, // some legacy browsers (IE11, various SmartTVs) choke on 204
+};
+app.use(cors());
 
 // Tell the server to use routes we created
 const notesRouter = require("./routes/notes");

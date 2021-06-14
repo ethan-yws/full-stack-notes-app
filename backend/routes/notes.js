@@ -1,16 +1,9 @@
 const express = require("express");
 const router = express.Router();
 const Note = require("../model/note");
-const cors = require("cors");
-
-// Configuring CORS
-let corsOptions = {
-    origin: "http://localhost:3000",
-    optionsSuccessStatus: 200, // some legacy browsers (IE11, various SmartTVs) choke on 204
-};
 
 // Get all notes
-router.get("/", cors(corsOptions), async (req, res) => {
+router.get("/", async (req, res) => {
     try {
         const notes = await Note.find();
         res.json(notes);
@@ -20,12 +13,12 @@ router.get("/", cors(corsOptions), async (req, res) => {
 });
 
 // Get one note
-router.get("/:id", cors(corsOptions), getNote, (req, res) => {
+router.get("/:id", getNote, (req, res) => {
     res.json(res.note);
 });
 
 // Create one note
-router.post("/", cors(corsOptions), async (req, res) => {
+router.post("/", async (req, res) => {
     const note = new Note({
         title: req.body.title,
         content: req.body.content,
@@ -40,7 +33,7 @@ router.post("/", cors(corsOptions), async (req, res) => {
 });
 
 // Update one note
-router.patch("/:id", cors(corsOptions), getNote, async (req, res) => {
+router.patch("/:id", getNote, async (req, res) => {
     if (req.body.title != null) {
         res.note.title = req.body.title;
     }
@@ -58,7 +51,7 @@ router.patch("/:id", cors(corsOptions), getNote, async (req, res) => {
 });
 
 // Delete one note
-router.delete("/:id", cors(corsOptions), getNote, async (req, res) => {
+router.delete("/:id", getNote, async (req, res) => {
     try {
         await res.note.remove();
         res.json({ message: "Deleted This Note" });
