@@ -8,7 +8,13 @@ Full Stack Notes Taking App built on MERN stack
 -   Hourly Weather Report Widget
 -   Rich Markdown Editor
 
+##### Frontend v1 Layout (Ditched)
+
 ![app main scene](./screenshots/screenshot1.png)
+
+##### Frontend v2 Layout Concept
+
+![frontend v2](./screenshots/ui-v2.png)
 
 ### Roadmaps
 
